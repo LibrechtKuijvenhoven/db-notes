@@ -1,3 +1,26 @@
+\documentclass[11pt, a4paper, oneside]{book}
 
+\usepackage{amsmath}
+\usepackage{amssymb}
 
-hi
+\newcommand{\determines}{\rightarrow}
+\newcommand{\multidetemines}{\twoheadrightarrow}
+\begin{document}
+
+\begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item[] Reflectivity $\beta \subseteq \alpha \implies \alpha \determines \beta $
+    \item[] Augmentation $\alpha \determines \beta \implies \gamma\alpha \determines \gamma\beta $
+    \item[] Transitivity $\alpha \determines \beta \wedge \beta \determines \gamma \implies \alpha \determines \gamma $
+    \item[] Union $\alpha \determines \beta \wedge \alpha \determines \gamma \implies \alpha \determines \gamma\beta $
+    \item[] Decomposition $\alpha \determines \beta\gamma \implies \alpha \determines \beta \wedge \alpha \determines \gamma $
+    \item[] Pseudo-transitivity $\alpha \determines \beta \wedge \gamma\beta \determines \delta \implies \alpha\gamma \determines \delta $
+    \item[] Complementation $\alpha \multidetemines \beta \implies \alpha \multidetemines (R - \beta ) - \alpha$
+    \item[] Multivalued augmentation $\alpha \multidetemines \beta \wedge \gamma \subseteq R \wedge \delta \subseteq \gamma \implies \gamma\alpha \multidetemines \delta\beta$
+    \item[] Multivalued transitivity $\alpha \multidetemines \beta \wedge \beta \multidetemines \gamma \implies \alpha \multidetemines \gamma - \beta $
+    \item[] Replication $\alpha \determines \beta \implies \alpha \multidetemines \beta$
+    \item[] Coalescence $\alpha \multidetemines \beta \wedge \gamma \subseteq \beta \wedge \exists\delta : \delta \subseteq R \wedge \delta \cap \beta = \emptyset \wedge \delta \determines \gamma \implies \alpha \determines \gamma$
+\end{itemize}
+\end{document}
+
